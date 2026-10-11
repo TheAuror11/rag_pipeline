@@ -1,0 +1,28 @@
+[project]
+name = "rag-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Tejesh Verma", email = "tejeshver1@outlook.com" }
+]
+requires-python = ">=3.13,<3.15"
+dependencies = [
+    "chromadb>=1.5.9",
+    "faiss-cpu>=1.15.1",
+    "ipykernel>=7.4.0",
+    "langchain>=1.4.4",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.9",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.20.0",
+    "sentence-transformers>=6.1.0",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+rag-pipeline = "rag_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
